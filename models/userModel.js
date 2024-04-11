@@ -19,7 +19,7 @@ const user = sequelize.define(
     },
     email: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false, // Add validation like isEmail
     },
     password: {
       type: DataTypes.STRING,
